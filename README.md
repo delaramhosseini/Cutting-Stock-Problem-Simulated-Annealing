@@ -1,4 +1,5 @@
 # Cutting Stock Problem Using Simulated Annealing
+Implementaiton of the Simulated Annealing Algorithm to solve the Cutting Stock Problem
 
 ## Introduction
 This project implements the **Simulated Annealing Algorithm** to solve the **Cutting Stock Problem**, an optimization challenge where the goal is to minimize material waste when cutting large rolls of material into smaller pieces to meet specific customer demands. The algorithm explores different cutting patterns and aims to find the most efficient one with minimal waste.
