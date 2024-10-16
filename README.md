@@ -1,22 +1,23 @@
 # Cutting Stock Problem Using Simulated Annealing
 
+## Introduction
 This project implements the **Simulated Annealing Algorithm** to solve the **Cutting Stock Problem**, an optimization challenge where the goal is to minimize material waste when cutting large rolls of material into smaller pieces to meet specific customer demands. The algorithm explores different cutting patterns and aims to find the most efficient one with minimal waste.
 
-## Simulated Annealing Algorithm Overview
+### Simulated Annealing Algorithm Overview
 
 **Simulated Annealing** is a probabilistic optimization algorithm inspired by the process of annealing in metallurgy, where a material is heated and then slowly cooled to remove defects and optimize its structure. In optimization problems, it helps find an approximate global optimum by exploring the solution space more freely at higher temperatures and gradually narrowing down the search as the temperature decreases.
 
-### Key Steps in Simulated Annealing:
+#### Key Steps in Simulated Annealing:
 1. **Initial Temperature**: The algorithm starts with a high temperature, allowing it to accept both better and worse solutions in the beginning.
 2. **Exploration**: At each step, a new neighbor solution is generated and compared to the current one. If the neighbor is better, it is accepted. If worse, it might still be accepted with a probability that depends on the current temperature and how much worse the solution is.
 3. **Cooling**: As the temperature decreases over time, the algorithm becomes more selective, favoring better solutions and rejecting worse ones more often.
 4. **Convergence**: Eventually, the temperature cools enough that the algorithm mostly accepts only better solutions, leading to convergence on a near-optimal solution.
 
-### Advantages:
+#### Advantages:
 - **Avoids Local Optima**: The ability to accept worse solutions early on helps the algorithm avoid getting stuck in suboptimal solutions (local minima).
 - **Flexibility**: Simulated Annealing can be applied to a wide variety of optimization problems, including complex, non-convex problems.
 
-### Limitations:
+#### Limitations:
 - **Time Complexity**: The algorithm may take longer to converge compared to greedy algorithms or other methods, especially if the cooling rate is too slow.
 - **Parameter Sensitivity**: The performance depends heavily on parameters like initial temperature, cooling rate (`alpha`), and stopping criteria.
 
